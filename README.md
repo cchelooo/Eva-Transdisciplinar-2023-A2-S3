@@ -12,3 +12,36 @@ Basándose en estas observaciones, Galileo razonó que si una bola rodara a lo l
 A partir de estas conclusiones, Galileo llegó a la idea de que, en ausencia de fricción u otras fuerzas que se opusieran, un objeto en movimiento horizontal continuaría moviéndose indefinidamente. Esto estableció los fundamentos del MRU, un movimiento en línea recta y con velocidad constante.
 
 ![image](https://github.com/cchelooo/Eva-Transdisciplinar-2023-A2-S3/assets/129316732/c2521d52-85f1-4781-b8ef-e0e9d35bab12)
+
+
+
+
+Como se resuelve 
+
+Para resolver problemas de MRU (Movimiento Rectilíneo Uniforme), se utilizan las ecuaciones básicas del movimiento. Estas ecuaciones relacionan la posición, la velocidad, el tiempo en un MRU. 
+
+Las principales ecuaciones de MRU: 
+
+1.-Ecuación de la posición: La posición (x) de un objeto en un MRU se puede calcular utilizando la ecuación: x = x₀ + v * (t - t₀ ) donde x₀ es la posición inicial, v es la velocidad constante y t es el tiempo transcurrido. 
+
+2.-Ecuación de la velocidad: La velocidad (v) en un MRU se mantiene constante y se puede calcular utilizando la ecuación: v = (x - x₀) / (t -t ₀ ) donde x es la posición final, x₀ es la posición inicial y t es el tiempo transcurrido. 
+
+3.-Ecuación del tiempo: El tiempo (t) en un MRU se puede calcular utilizando la ecuación: t = (x - x₀) / v 
+
+
+
+Aplicaciones
+
+1.-Física básica: El MRU es uno de los conceptos fundamentales en la física elemental y se utiliza para introducir el estudio del movimiento. Es comúnmente enseñado en cursos de física de nivel secundario o universitario. 
+
+
+2.-Mecánica: El MRU es una parte fundamental de la mecánica, que es la rama de la física que estudia el movimiento y las fuerzas que lo causan. El MRU se utiliza para analizar objetos en movimiento rectilíneo a velocidades constantes. 
+
+
+3.-Ingeniería del transporte: En el campo de la ingeniería del transporte, el MRU se utiliza para modelar y analizar el movimiento de vehículos en carreteras rectas a velocidades constantes. Es útil para el diseño de carreteras, el cálculo de tiempos de viaje y la planificación del tráfico. 
+
+
+4.-Astronomía: Aunque los objetos astronómicos a menudo tienen movimientos más complejos, el MRU se utiliza en algunos casos para describir el movimiento de objetos celestes, como los satélites artificiales en órbitas circulares. 
+
+
+5.-Estadística y análisis de datos: En el análisis de datos, el MRU se utiliza para describir el movimiento lineal de una variable a una tasa constante. Por ejemplo, se puede aplicar el MRU al análisis de datos económicos para estudiar el crecimiento lineal de una variable en el tiempo. 

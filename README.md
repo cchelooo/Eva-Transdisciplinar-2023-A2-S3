@@ -16,18 +16,33 @@ A partir de estas conclusiones, Galileo llegó a la idea de que, en ausencia de 
 
 
 
-Como se resuelve 
+Ecuación de la velocidad: La velocidad en un MRU se mantiene constante y se puede calcular utilizando la ecuación de la velocidad:
 
-Para resolver problemas de MRU (Movimiento Rectilíneo Uniforme), se utilizan las ecuaciones básicas del movimiento. Estas ecuaciones relacionan la posición, la velocidad, el tiempo en un MRU. 
+$$v = {Δx \over  Δt} = {x-x₀ \over t-t₀}$$
 
-Las principales ecuaciones de MRU: 
+Donde:
+\(v\) es la velocidad.
+\(x\) es la posición.
+\(x₀\) es la posición inicial.
+\(t\) es el tiempo.
+\(t₀\) es el tiempo inicial.
 
-1.-Ecuación de la posición: La posición (x) de un objeto en un MRU se puede calcular utilizando la ecuación: x = x₀ + v * (t - t₀ ) donde x₀ es la posición inicial, v es la velocidad constante y t es el tiempo transcurrido. 
+Ecuación del tiempo : El tiempo (t) en un MRU se puede calcular utilizando la ecuación:
 
-2.-Ecuación de la velocidad: La velocidad (v) en un MRU se mantiene constante y se puede calcular utilizando la ecuación: v = (x - x₀) / (t -t ₀ ) donde x es la posición final, x₀ es la posición inicial y t es el tiempo transcurrido. 
+$$t = {x - x₀ \over  v}$$
+Donde:
+\(x\) es la posición.
+\(x₀\) es la posición inicial.
+\(v\) es la velocidad.
 
-3.-Ecuación del tiempo: El tiempo (t) en un MRU se puede calcular utilizando la ecuación: t = (x - x₀) / v 
+Ecuación de la posición: La posición de un objeto en un MRU se puede calcular utilizando la ecuación:
 
+
+$$x = x₀ + v * t$$
+Donde:
+\(x₀\) es la posición inicial.
+\(v\) es la velocidad
+\(t\) es el tiempo.
 
 
 Aplicaciones

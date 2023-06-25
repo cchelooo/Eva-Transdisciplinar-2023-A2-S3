@@ -1,5 +1,16 @@
 import tkinter as tk
 from tkinter import *
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import matplotlib.pyplot as plt
+
+
+# Variables globales
+velocidad = 0
+tiempo = 0
+distancia = 0
+
+tiempo_grafico = [0, 0]
+posicion_grafico = [0, 0]
 
 ventana = tk.Tk()                                                              # creación de la ventana 
 ventana.title('Movimiento uniforme rectilineo (MUR)')                          # titulo de la ventana
@@ -26,15 +37,15 @@ fondo3.place(x =  400, y = 155, width= 405, height= 270)
 fondo4 = Frame(ventana, bg = "#367867")
 fondo4.place(x = 840, y = 155 ,  width= 400, height= 270)
 #   -------------------- Fondo descripcion del graficos pos ----------------------
-fondo3 = Frame(ventana,bg = "#48A683")
-fondo3.place(x =  500, y = 160, width= 300, height= 250)
-fondo4 = Frame(ventana, bg = "#48A683")
-fondo4.place(x = 845, y = 160 ,  width= 300, height= 250)
+fondo5 = Frame(ventana,bg = "#48A683")
+fondo5.place(x =  500, y = 160, width= 300, height= 250)
+fondo6 = Frame(ventana, bg = "#48A683")
+fondo6.place(x = 845, y = 160 ,  width= 300, height= 250)
 # -------------------------Fondo para texto----
-fondo3 = Frame(ventana,bg = "#396063")
-fondo3.place(x =  400, y = 440, width= 400, height= 150)
-fondo4 = Frame(ventana, bg = "#396063")
-fondo4.place(x = 840, y = 440 ,  width= 400, height= 150)
+fondo7 = Frame(ventana,bg = "#396063")
+fondo7.place(x =  400, y = 440, width= 400, height= 150)
+fondo8 = Frame(ventana, bg = "#396063")
+fondo8.place(x = 840, y = 440 ,  width= 400, height= 150)
 #   --------------------- Fondo de pos grafico ---------------------
 #fondo3 = Frame(ventana,bg = "#306E57")
 #fondo3.place(x =  590, y = 145, width= 340, height= 260)
@@ -50,6 +61,28 @@ definicion_mru = ''' El mru es....
 .........texto..........
 .........texto..........
 '''
+
+fig1 = plt.figure(figsize=(6, 4), dpi=100)
+ax1 = fig1.add_subplot(111)
+ax1.plot()
+ax1.set(xlim=[0, 100], ylim=[0, 100], xlabel='X', ylabel='Y')
+ax1.grid(color='black', linestyle='--', linewidth=0.5)
+
+canvas1 = FigureCanvasTkAgg(fig1, master=fondo6)
+canvas1.draw()
+canvas1.get_tk_widget().place(x=0, y=0, width=300, height=250)
+
+
+fig = plt.figure(figsize=(6, 4), dpi=100)
+ax = fig.add_subplot(111)
+ax.plot()
+ax.set(xlim=[0, 100], ylim=[0, 100], xlabel='X', ylabel='Y')
+ax.grid(color='black', linestyle='--', linewidth=0.5)
+
+canvas = FigureCanvasTkAgg(fig, master=fondo5)
+canvas.draw()
+canvas.get_tk_widget().place(x=0, y=0, width=300, height=250)
+
 #----------------------------mini ventana-----------
 def mini_ventana():
     global definicion_mru    # llama el texto que estaba externo
@@ -184,6 +217,7 @@ def b_velocidad():
         texto7.place(x= 10, y = 475)
 #   ------------Calculo de velocida-----------
     def BOTON():
+        global Pi,Pf,Ti,Tf
         a = caja1.get()    # Usamos la función .get(), para obtener el dato en caja 1 , y se almacena en "a"
         b = caja2.get()    # obtenemos el dato en caja2, se guarda en "b"
         c = caja3.get()    # obtenemos el dato en caja2, se guarda en "b"
@@ -191,6 +225,11 @@ def b_velocidad():
 #       ----------------------------------------------------------------
         calcular = round(((float(b) - float(a) )/(float(d)-float(c))),6)   
         velocidad = "La velocidad constante es " + str(calcular) + " m/s "
+        Pi = float(a)
+        Pf = float(b)
+        Ti=float(c)
+        Tf=float(d)
+        grafico_velocidad()
 
         c_res1 = Label(ventana, text= velocidad,fg = "white", bg = "#367867")
         b_explica_cal = Button(ventana, text = " ¿Comó se calculo ? | (Haga clic Aqui)", bg = "#253D40",fg= "white", command = explicacion_mini_window1)
@@ -419,6 +458,34 @@ def b_tiempo():
     Bot_C.place(x = 40 , y =  485)
 #   -------------Texto se cambia ------------------------
     texto1.configure(text=defi_tiempo) # este cambia el texto actual por uno nuevo
+
+
+def grafico_velocidad():
+    global velocidad, tiempo, ventana,ax1,canvas1,distancia
+
+    # Crear y mostrar gráfico de posición-tiempo
+    tiempo_grafico = [0, tiempo]
+    posicion_grafico = [0, distancia]
+
+    ax1.clear()
+    ax1.grid(color="blue", linestyle='--', linewidth=0.5)
+    ax1.plot(tiempo_grafico, posicion_grafico)
+    ax1.set_xlabel('Tiempo (s)')
+    ax1.set_ylabel('Posición (m)')
+    ax1.set_title('Gráfico de Posición vs Tiempo')
+
+        # Dibujar línea horizontal en la posición actual
+    ax1.axhline(y=posicion_grafico[1], color='red', linestyle='--')
+
+    tiempo = Tf - Ti
+    posicion = velocidad * tiempo
+
+    # Iterar sobre los puntos y mostrarlos en el gráfico
+    for i in range(1, len(tiempo_grafico)):
+        ax1.plot(tiempo_grafico[i-1:i+1], posicion_grafico[i-1:i+1], 'ro')  # Punto actual en rojo
+        plt.plot([tiempo, tiempo+1], [posicion, posicion+velocidad], 'b-') # Línea entre puntos en azul
+
+    canvas1.draw()
 
 #-------------- Creacion de los objetos, que se mostraran en pantalla/ventana (button and Label)----------------------------
 

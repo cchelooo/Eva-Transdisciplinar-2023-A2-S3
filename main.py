@@ -113,27 +113,20 @@ def mini_ventana():
     window.mainloop()  # ejecutar y mostrar en pantalla los contenidos de la mini ventana
 
 #------------varibles con textos(definición de velocidad,posicion, distancia)----------------------------------------------
-defi_velocidad = """La velocidad es write_write_write_write
-y tiene como unidad de mmedida km/h o m/s write
-y esta se calcula , como write_write_write_writ
-w_write_write_write_write_write_write_write_wri
-write_write.write.write.write.write.write.write.
-write.write.write.write.write.write.write.write.
-write.write.write.write.write.write.write.write."""
+defi_velocidad = """La velocidad es el cambio de posición de un objeto 
+en el espacio dentro de determinada cantidad de tiempo, 
+es decir, la rapidez, más la dirección en que se produce dicho movimiento."""
 
-defi_posicion = """La posicion es write.write.write.write.write.wr
-tiene como unidad de media m, km , etc, y write.
-se calcula como write.write.write.write.write.w
-write.write.write.write.write.write.write.write.
-write.write.write.write.write.write.write.write.
-write.write.write.write.write.write.write.write."""
+defi_posicion = """La posicion es el lugar en que se encuentra el móvil 
+en un cierto instante de tiempo t. 
+Suele representarse con el vector de posición x. 
+Trayectoria es la línea que describe un cuerpo durante su movimiento."""
 
-defi_tiempo = """El tiempo es write.write.write.write.write.writ
-y du unidad SI es s , h , etc write.write.write.
-y se calcula como write.write.write.write.write.
-write.write.write.write.write.write.write.write.
-write.write.write.write.write.write.write.write.
-write.write.write.write.write.write.write.write."""
+defi_tiempo = """El tiempo es una magnitud que sirve para medir
+la duración o la separación de uno o más acontecimientos. 
+Esto permite ordenarlos en una secuencia (pasado, presente, futuro)
+y determinar si ocurren o no en simultáneo
+(Que ocurre o se hace al mismo tiempo que otra cosa)."""
 # -- textos de las descripcion de los graficos ------------- ( posible cambio)/ o elmine por la agregar datos cada vez se opere uno nuevo
 defi_grafico_velocidad = '''
 Como se puede obsebar en el grafico , encontramos

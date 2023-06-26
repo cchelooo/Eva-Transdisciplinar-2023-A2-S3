@@ -335,12 +335,16 @@ def b_distancia():
         texto5.place(x = 10, y = 340)
 #   ---------------Calculo de distancia----------------------------
     def BOTON():
-        a = caja1.get() 
-        b = caja2.get() 
-        calcular = float(a) * float(b)
-        velocidad = "La distancia recorrida es " +str(calcular) + " metros"
+        global tiempo, distancia, velocidad
+        a = caja1.get()
+        b = caja2.get()
+        velocidad = float(a)
+        tiempo = float(b)
+        distancia = velocidad * tiempo
+        distancia_texto = "La distancia recorrida es " + str(distancia) + " metros"
+        grafico_distancia()
 #       ------------------------------------------------
-        c_res1 = Label(ventana, text= velocidad,fg = "white", bg = "#367867")
+        c_res1 = Label(ventana, text= distancia_texto,fg = "white", bg = "#367867")
         b_explica_cal = Button(ventana, text = " ¿Comó se calculo ? | (Haga clic Aqui)", bg = "#253D40",fg= "white", command = explicacion_mini_window2)
         c_res1.place(x = 40, y = 525 ,width = 280, height= 20)
         b_explica_cal.place(x = 20 , y = 545, width= 320, height= 30)
@@ -438,7 +442,7 @@ def b_tiempo():
         tiempo = str(calcular)
         grafico_tiempo()
 #       ------------------Objetos(texto y boton)----------------------------------
-        c_res1 = Label(ventana, text= velocidad,fg = "white", bg = "#367867")
+        c_res1 = Label(ventana, text= tiempo,fg = "white", bg = "#367867")
         b_explica_cal = Button(ventana, text = " ¿Comó se calculo ? | (Haga clic Aqui)", bg = "#253D40",fg= "white", command = explicacion_mini_window3)
         c_res1.place(x = 40, y = 525 ,width = 280, height= 20)
         b_explica_cal.place(x = 20 , y = 545, width= 320, height= 30)
@@ -500,6 +504,29 @@ def grafico_velocidad():
         plt.plot([tiempo, tiempo+1], [posicion, posicion+velocidad], 'b-') # Línea entre puntos en azul
 
     canvas1.draw()
+
+def grafico_distancia():
+    global velocidad, tiempo, ventana, ax, canvas
+
+    # Crear y mostrar gráfico de posición-tiempo
+    tiempo_grafico = [0, tiempo]
+    posicion_grafico = [0, distancia]
+
+    ax.clear()
+    ax.grid(color="blue", linestyle='--', linewidth=0.5)
+    ax.plot(tiempo_grafico, posicion_grafico)
+    ax.set_xlabel('Tiempo (s)')
+    ax.set_ylabel('Posición (m)')
+    ax.set_title('Gráfico de Posición vs Tiempo')
+
+    posicion = velocidad * tiempo
+
+    # Iterar sobre los puntos y mostrarlos en el gráfico
+    for i in range(1, len(tiempo_grafico)):
+        ax.plot(tiempo_grafico[i-1:i+1], posicion_grafico[i-1:i+1], 'ro')  # Punto actual en rojo
+        ax.plot([tiempo, tiempo+1], [posicion, posicion+velocidad], 'b-') # Línea entre puntos en azul
+
+    canvas.draw()
 
 def grafico_tiempo():
     global velocidad, tiempo, ventana, ax, canvas, distancia

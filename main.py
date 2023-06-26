@@ -18,34 +18,44 @@ ventana.geometry("1280x700")                                                   #
 ventana.resizable(False, False)                                                # para que el usuario no cambie el tamaño de la ventana
 ventana.configure(bg='#2F4F52')                                                # color de fondo de la ventana
 #   --------------------- Fondo 1/4 de la pantalla en x 
-fondo1 = Frame(ventana, bg= "#253D40")
-fondo1.place(x = 0, y = 0, width= 375 , height= 700)
+fondo1 = Frame(ventana, bg="#253D40")
+fondo1.place(x=0, y=0, width=375, height=700)
 
-fondo2 = Frame(ventana, bg= "#396063")
-fondo2.place(x = 5, y = 5, width= 360 , height= 690)
-#  ------------------------ Fondo de animacion -----------------
-fondo3 = Frame(ventana,bg = "#48A683")
-fondo3.place(x = 390 , y = 5, width= 870, height= 80)
-fondo4 = Frame(ventana, bg = "#088556")
-fondo4.place(x = 390, y = 85,  width= 870, height= 20)
-#  --------------------------- linia de separacion ---------------------
+fondo2 = Frame(ventana, bg="#396063")
+fondo2.place(x=5, y=5, width=360, height=690)
+
+# ------------------------ Fondo de animacion -----------------
+fondo3 = Frame(ventana, bg="#48A683")
+fondo3.place(x=390, y=5, width=870, height=80)
+
+fondo4 = Frame(ventana, bg="#088556")
+fondo4.place(x=390, y=85, width=870, height=20)
+
+# --------------------------- linia de separacion ---------------------
 dodo = Frame(ventana, bg="#132B22")
-dodo.place( x = 820 , y = 105, width= 5, height= 590)
-#   -------------------- Fondo decoración ----------------------
-fondo3 = Frame(ventana,bg = "#367867")
-fondo3.place(x =  400, y = 155, width= 405, height= 270)
-fondo4 = Frame(ventana, bg = "#367867")
-fondo4.place(x = 840, y = 155 ,  width= 400, height= 270)
-#   -------------------- Fondo descripcion del graficos pos ----------------------
-fondo5 = Frame(ventana,bg = "#48A683")
-fondo5.place(x =  500, y = 160, width= 300, height= 250)
-fondo6 = Frame(ventana, bg = "#48A683")
-fondo6.place(x = 845, y = 160 ,  width= 300, height= 250)
+dodo.place(x=820, y=105, width=5, height=590)
+
+# -------------------- Fondo decoración ----------------------
+fondo5 = Frame(ventana, bg="#367867")
+fondo5.place(x=400, y=155, width=405, height=270)
+
+fondo6 = Frame(ventana, bg="#367867")
+fondo6.place(x=840, y=155, width=400, height=270)
+
+# -------------------- Fondo descripcion del graficos pos ----------------------
+fondo7 = Frame(ventana, bg="#48A683")
+fondo7.place(x=500, y=160, width=300, height=250)
+
+fondo8 = Frame(ventana, bg="#48A683")
+fondo8.place(x=845, y=160, width=300, height=250)
+
 # -------------------------Fondo para texto----
-fondo7 = Frame(ventana,bg = "#396063")
-fondo7.place(x =  400, y = 440, width= 400, height= 150)
-fondo8 = Frame(ventana, bg = "#396063")
-fondo8.place(x = 840, y = 440 ,  width= 400, height= 150)
+fondo9 = Frame(ventana, bg="#396063")
+fondo9.place(x=400, y=440, width=400, height=150)
+
+fondo10 = Frame(ventana, bg="#396063")
+fondo10.place(x=840, y=440, width=400, height=150)
+
 #   --------------------- Fondo de pos grafico ---------------------
 #fondo3 = Frame(ventana,bg = "#306E57")
 #fondo3.place(x =  590, y = 145, width= 340, height= 260)
@@ -68,7 +78,7 @@ ax1.plot()
 ax1.set(xlim=[0, 100], ylim=[0, 100], xlabel='X', ylabel='Y')
 ax1.grid(color='black', linestyle='--', linewidth=0.5)
 
-canvas1 = FigureCanvasTkAgg(fig1, master=fondo6)
+canvas1 = FigureCanvasTkAgg(fig1, master=fondo8)
 canvas1.draw()
 canvas1.get_tk_widget().place(x=0, y=0, width=300, height=250)
 
@@ -79,7 +89,7 @@ ax.plot()
 ax.set(xlim=[0, 100], ylim=[0, 100], xlabel='X', ylabel='Y')
 ax.grid(color='black', linestyle='--', linewidth=0.5)
 
-canvas = FigureCanvasTkAgg(fig, master=fondo5)
+canvas = FigureCanvasTkAgg(fig, master=fondo7)
 canvas.draw()
 canvas.get_tk_widget().place(x=0, y=0, width=300, height=250)
 
@@ -418,10 +428,15 @@ def b_tiempo():
         texto5.place(x = 10, y = 415)
 #   ---------------Calculo de tiempo------------------------
     def BOTON():
+        global velocidad,tiempo,distancia
         a = caja1.get()                      # guarda el numero ingresado en Entry de velocidad 
         b = caja2.get()                      # guarda el numero ingresado en Entry de distancia 
         calcular = float(a) / float(b)       # convierte en float, opera la divición de los num guardados en la variable a y b , y los guarda en una varriable 
-        velocidad = " El tiempo es " + str(calcular) + " segundos"  # Convierte el dato que esta en "calcular" y le agrega un str metros, la variable "velocidad "guarda un string
+        distancia=float(a)
+        velocidad=float(b)
+        tiempo = " El tiempo es " + str(calcular) + " segundos"  # Convierte el dato que esta en "calcular" y le agrega un str metros, la variable "velocidad "guarda un string
+        tiempo = str(calcular)
+        grafico_tiempo()
 #       ------------------Objetos(texto y boton)----------------------------------
         c_res1 = Label(ventana, text= velocidad,fg = "white", bg = "#367867")
         b_explica_cal = Button(ventana, text = " ¿Comó se calculo ? | (Haga clic Aqui)", bg = "#253D40",fg= "white", command = explicacion_mini_window3)
@@ -459,7 +474,6 @@ def b_tiempo():
 #   -------------Texto se cambia ------------------------
     texto1.configure(text=defi_tiempo) # este cambia el texto actual por uno nuevo
 
-
 def grafico_velocidad():
     global velocidad, tiempo, ventana,ax1,canvas1,distancia
 
@@ -486,6 +500,28 @@ def grafico_velocidad():
         plt.plot([tiempo, tiempo+1], [posicion, posicion+velocidad], 'b-') # Línea entre puntos en azul
 
     canvas1.draw()
+
+def grafico_tiempo():
+    global velocidad, tiempo, ventana, ax, canvas, distancia
+
+    tiempo_float = float(tiempo)  # Convertir tiempo a float
+    posicion = velocidad * tiempo_float
+
+    tiempo_grafico = [0, tiempo_float]
+    posicion_grafico = [0, distancia]
+
+    ax.clear()
+    ax.grid(color="blue", linestyle='--', linewidth=0.5)
+    ax.plot(tiempo_grafico, posicion_grafico)
+    ax.set_xlabel('Tiempo (s)')
+    ax.set_ylabel('Posición (m)')
+    ax.set_title('Gráfico de Posición vs Tiempo')
+
+    for i in range(1, len(tiempo_grafico)):
+        ax.plot(tiempo_grafico[i-1:i+1], posicion_grafico[i-1:i+1], 'ro')
+        ax.plot([tiempo_float, tiempo_float+1], [posicion, posicion+velocidad], 'b-')
+
+    canvas.draw()
 
 #-------------- Creacion de los objetos, que se mostraran en pantalla/ventana (button and Label)----------------------------
 

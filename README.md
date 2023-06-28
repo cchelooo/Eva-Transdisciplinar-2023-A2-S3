@@ -18,7 +18,7 @@ A partir de estas conclusiones, Galileo llegó a la idea de que, en ausencia de 
 
 Ecuación de la velocidad: La velocidad en un MRU se mantiene constante y se puede calcular utilizando la ecuación de la velocidad:
 
-v = {Δx \over  Δt} = {x-x₀ \over t-t₀}v = {Δx \over  Δt} = {x-x₀ \over t-t₀}
+$$v = {Δx \over  Δt} = {x-x₀ \over t-t₀}v = {Δx \over  Δt} = {x-x₀ \over t-t₀}$$
 
 Donde:
 \(v\) es la velocidad.
@@ -29,7 +29,7 @@ Donde:
 
 Ecuación del tiempo : El tiempo (t) en un MRU se puede calcular utilizando la ecuación:
 
-t = {x - x₀ \over  v}t = {x - x₀ \over  v}
+$$t = {x - x₀ \over  v}t = {x - x₀ \over  v}$$
 Donde:
 \(x\) es la posición.
 \(x₀\) es la posición inicial.
@@ -38,7 +38,7 @@ Donde:
 Ecuación de la posición: La posición de un objeto en un MRU se puede calcular utilizando la ecuación:
 
 
-x = x₀ + v * tx = x₀ + v * t
+$$x = x₀ + v * tx = x₀ + v * t$$
 Donde:
 \(x₀\) es la posición inicial.
 \(v\) es la velocidad

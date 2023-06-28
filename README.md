@@ -88,7 +88,22 @@ Una biblioteca es un conjunto de código predefinido que ofrece funcionalidades 
 - Ejecutar el archivo .exe "MRU"
 
 # Guia de uso.
--
+Ventana principal
+![image](https://github.com/cchelooo/Eva-Transdisciplinar-2023-A2-S3/assets/129316732/e10254ab-65cd-4628-9033-f8a7cc3004ab)
+
+## Eleccion de calculos.
+
+
+![image](https://github.com/cchelooo/Eva-Transdisciplinar-2023-A2-S3/assets/129316732/508425c2-5100-4758-9cf0-ae1de8363cb0)
+
+## Ingreso de datos segun el calculo deseado.
+
+![image](https://github.com/cchelooo/Eva-Transdisciplinar-2023-A2-S3/assets/129316732/c145839f-9946-433b-a1d6-f7e2268fef34)
+
+## Respuesta esperada.
+
+![image](https://github.com/cchelooo/Eva-Transdisciplinar-2023-A2-S3/assets/129316732/9030b326-f750-43c3-9f7e-f3dc2e2f6452)
+
 
 # Conclusion.
 Para concluir este proyecto, hemos logrado representar el fenómeno físico asignado (MUR) explicando su naturaleza y más. Utilizando herramientas de programación, creamos una interfaz gráfica capaz de mostrar información deseada, como fórmulas, cálculos, textos informativos, entre otros.

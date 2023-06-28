@@ -8,12 +8,12 @@ def animacion(dato):
     canvas = tk.Canvas(ventana, width=700, height=146)
     canvas.place(x=386, y=5)
 
-    background_image = Image.open("tests/img/road3.png")
+    background_image = Image.open("img/road3.png")
     background_photo = ImageTk.PhotoImage(background_image)
     background1 = canvas.create_image(0, 0, image=background_photo, anchor="nw")
     background2 = canvas.create_image(700, 0, image=background_photo, anchor="nw")
 
-    car_image = Image.open("tests/img/car.png")
+    car_image = Image.open("img/car.png")
     car_image = car_image.resize((80, 100))
     car_photo = ImageTk.PhotoImage(car_image)
     car = canvas.create_image(300, 120, image=car_photo)
@@ -205,7 +205,7 @@ def info(dato, boton):
 
             calculo_body = Label(ventana, text=f'\nPara calcular la posición usaremos los datos anteriormente dados, elegidos por usted.\nLo que haremos sera multiplicar la velocidad constante por el tiempo total.\n\n    {v} * {tiem} = {x}\n\nCon esto listo podemos conocer que la incognita de la posición final es {x}m.\n', bg='#DFDDC7', justify=LEFT, anchor='w')
             calculo_body.place(x=3, y=343, width=463)
-        img = PhotoImage(file="tests\img\F03.png") 
+        img = PhotoImage(file="img\F03.png") 
         img_x = Label(ventana, image=img)
         img_x.place(x=239, y=239)
     elif dato == "velocidad":
@@ -231,7 +231,7 @@ def info(dato, boton):
 
             calculo_body = Label(ventana, text=f'\nPara calcular la velocidad constante usaremos los datos anteriormente dados, \nelegidos por usted.\nLo que haremos sera dividir la posición final con el tiempo total.\n\n   {x} / {tiem} = {v}\n\nCon esto realizado podremos conocer que la \nincognita de la velocidad constante es de {v}m/s\n', justify=LEFT, anchor='w')
             calculo_body.place(x=3, y=403, width=463)
-        img = PhotoImage(file="tests\img\F04.png")
+        img = PhotoImage(file="img\F04.png")
         img_v = Label(ventana, image=img)
         img_v.place(x=239, y=260)
     ventana.mainloop()
@@ -244,7 +244,7 @@ ventana.resizable(False, False)
 ventana.configure(bg='#DFDDC7') 
 
 # TEXTOS
-with open('tests/textos.json', 'r', encoding='utf-8') as textos:
+with open('textos.json', 'r', encoding='utf-8') as textos:
     contenido_mru = json.load(textos)
 # Definicion general
 var_mru = contenido_mru

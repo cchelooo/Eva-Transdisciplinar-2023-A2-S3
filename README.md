@@ -1,7 +1,7 @@
 # Proyecto-FIS1102-INFO1120 A2-S3
 ### MRU (Movimiento Rectilineo Uniforme)
 
-ENLACE VIDEO EXPLICATIVO: [https://youtu.be/7SZMF_r-7sIhttps://youtu.be/7SZMF_r-7sI](https://www.youtube.com/watch?v=7SZMF_r-7sI)
+ENLACE VIDEO EXPLICATIVO: https://www.youtube.com/watch?v=7SZMF_r-7sI
 
 El **MRU** define el movimiento en el cual un objeto se desplaza en línea recta, en una sola dirección, recorriendo distancias iguales en el mismo intervalo de tiempo, manteniendo en todo momento una velocidad constante y sin aceleración.
 

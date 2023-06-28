@@ -330,7 +330,7 @@ def graficos(dato):
         ax1.plot([0, t], [0, posi])
         ax2.plot([0, t], [v,v])
     elif dato == "vel":
-        ax1.plot(s[tI, tF], [xI, xF])
+        ax1.plot([tI, tF], [xI, xF])
         ax2.plot([tI, tF], [div,div])
     elif dato == "tie":
         ax1.plot([0, tiem], [0, x])

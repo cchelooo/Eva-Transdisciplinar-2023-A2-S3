@@ -1,6 +1,5 @@
 # Proyecto-FIS1102-INFO1120 A2-S3
 ### MRU (Movimiento Rectilineo Uniforme)
-VIDEO EXPLICATIVO: https://www.youtube.com/watch?v=4XheHlWlF4M
 
 El **MRU** define el movimiento en el cual un objeto se desplaza en línea recta, en una sola dirección, recorriendo distancias iguales en el mismo intervalo de tiempo, manteniendo en todo momento una velocidad constante y sin aceleración.
 
@@ -76,8 +75,22 @@ Python cuenta con una gran cantidad de bibliotecas y módulos disponibles, lo qu
 Una biblioteca es un conjunto de código predefinido que ofrece funcionalidades y herramientas reutilizables
 
 # Bibliotecas utilizadas.
-- Tkinter.
-- Matplolib
-- Pil
-- Pyinstaller
-  
+
+- Tkinter: Se utiliza para crear la interfaz gráficas de usuario, crear y administrar la ventana principal, marcos, etiquetas, botones, entradas y otros elementos.
+- Matplotlib: Se utiliza para crear un gráfico de trabajo mecánico.
+- PIL: Se utiliza para cargar una imagen del personaje en la interfaz.
+- Pyinstaller : Se utiliza para crear un ejecutable del proyecto y facilitar la instalacion al usuario
+
+
+# Guia de instalacion.
+- Descargar el archivo 
+- Descomprimir el archivo en la carpeta deseada
+- Ejecutar el archivo .exe "MRU"
+
+# Guia de uso.
+-
+
+# Conclusion.
+Para concluir este proyecto, hemos logrado representar el fenómeno físico asignado (MUR) explicando su naturaleza y más. Utilizando herramientas de programación, creamos una interfaz gráfica capaz de mostrar información deseada, como fórmulas, cálculos, textos informativos, entre otros.
+
+Trabajamos en equipo, dividiendo las tareas entre los integrantes para abordar diferentes aspectos del proyecto. Al final, unimos todos los avances individuales para que el resultado sea más didáctico y comprensible visualmente para el público. De esta manera, las personas podrán utilizarlo en el futuro.

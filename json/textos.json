@@ -6,8 +6,8 @@
         "defi_tiempo": "El tiempo es una magnitud que sirve para medir la duración o la separación de uno o más acontecimientos. permite ordenarlos en una secuencia (pasado, presente, futuro) y determinar si ocurren o no en simultáneo (Que ocurre o se hace al mismo tiempo que otra cosa)."
     },
     {
-        "defi_grafico_velocidad": "Como se puede observar en el grafico, encontramos X (posición) \nen el eje Y, T (tiempo) en el eje X,\nen que tiene una pendiente creciente la cual esta \nindica la el grafico en si esta mostrando el y esto",
-        "defi_grafico_posicion": "Como se puede observar en el grafico, encontramos X (posicion) \nen el eje y, t (tiempo) en el eje x,\nen que tiene una pendiente creciente la cual esta \nindica la el grafico en si esta mostrando el y esto"
+        "defi_grafico_velocidad": "Como se puede observar en el grafico, encontramos Velocidad en el eje 'Y', \ny Tiempo en el eje 'X'. Se puede observar una linea paralela al eje X ya que \nla velocidad se mantiene siempre constante.",
+        "defi_grafico_posicion": "Como se puede observar en el grafico, encontramos Posición en el eje 'Y', \ny Tiempo en el eje 'X'. Se puede observar una pendiente que crece \nen función del tiempo, ya que al ser un mru se mantiene constante la Velocidad."
     },
     {
         "importante":"Recordemos que en MRU, la posición final, distancia recorrida y desplazamiento es lo mismo debido a que el movimiento es en linea recta.",

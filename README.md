@@ -83,7 +83,7 @@ Una biblioteca es un conjunto de código predefinido que ofrece funcionalidades 
 
 
 # Guia de instalacion.
-- Descargar el archivo 
+- Descargar el archivo (https://www.mediafire.com/file/d78xz0iqb0qgg9i/MRU.rar/file)
 - Descomprimir el archivo en la carpeta deseada
 - Ejecutar el archivo .exe "MRU"
 

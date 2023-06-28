@@ -19,7 +19,7 @@ A partir de estas conclusiones, Galileo llegó a la idea de que, en ausencia de 
 
 Ecuación de la velocidad: La velocidad en un MRU se mantiene constante y se puede calcular utilizando la ecuación de la velocidad:
 
-$$v = {Δx \over  Δt} = {x-x₀ \over t-t₀}$$
+v = {Δx \over  Δt} = {x-x₀ \over t-t₀}v = {Δx \over  Δt} = {x-x₀ \over t-t₀}
 
 Donde:
 \(v\) es la velocidad.
@@ -30,7 +30,7 @@ Donde:
 
 Ecuación del tiempo : El tiempo (t) en un MRU se puede calcular utilizando la ecuación:
 
-$$t = {x - x₀ \over  v}$$
+t = {x - x₀ \over  v}t = {x - x₀ \over  v}
 Donde:
 \(x\) es la posición.
 \(x₀\) es la posición inicial.
@@ -39,7 +39,7 @@ Donde:
 Ecuación de la posición: La posición de un objeto en un MRU se puede calcular utilizando la ecuación:
 
 
-$$x = x₀ + v * t$$
+x = x₀ + v * tx = x₀ + v * t
 Donde:
 \(x₀\) es la posición inicial.
 \(v\) es la velocidad
@@ -61,3 +61,23 @@ Aplicaciones
 
 
 5.-Estadística y análisis de datos: En el análisis de datos, el MRU se utiliza para describir el movimiento lineal de una variable a una tasa constante. Por ejemplo, se puede aplicar el MRU al análisis de datos económicos para estudiar el crecimiento lineal de una variable en el tiempo. 
+
+# Herramientas de la programacion utilizadas.
+
+# Python 3.11
+[![python™](https://www.python.org/static/img/python-logo@2x.png)](https://www.python.org/)
+
+Python es un lenguaje de programación de alto nivel y de propósito general. Se caracteriza por su sintaxis clara y legible, lo que lo convierte en una excelente opción tanto para principiantes como para programadores experimentados. Python se puede utilizar en una amplia variedad de aplicaciones, desde desarrollo web y científico hasta automatización de tareas y aprendizaje automático.
+
+Python cuenta con una gran cantidad de bibliotecas y módulos disponibles, lo que facilita el desarrollo de proyectos de manera eficiente. Es un lenguaje versátil que se utiliza en áreas como el análisis de datos, la inteligencia artificial, la creación de aplicaciones de escritorio, el desarrollo de juegos y mucho más.
+
+# Bibliotecas.
+
+Una biblioteca es un conjunto de código predefinido que ofrece funcionalidades y herramientas reutilizables
+
+# Bibliotecas utilizadas.
+- Tkinter.
+- Matplolib
+- Pil
+- Pyinstaller
+  

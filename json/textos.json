@@ -2,16 +2,16 @@
     {
         "def_mru": "El movimiento rectilíneo uniforme es cuando un «objeto» viaja en una trayectoria recta a una velocidad constante, dado que su aceleración es nula.",
         "defi_velocidad": "La velocidad es el cambio de posición de un objeto en el espacio dentro de determinada cantidad de tiempo, es decir, la rapidez, más la dirección en que se produce dicho movimiento.",
-        "defi_posicion": "La posicion es el lugar en que se encuentra el móvil en un cierto instante de tiempo t. Suele representarse con el vector de posición x. Trayectoria es la línea que describe un cuerpo durante su movimiento.",
-        "defi_tiempo": "El tiempo es una magnitud que sirve para medir la duración o la separación de uno o más acontecimientos. permite ordenarlos en una secuencia (pasado, presente, futuro) y determinar si ocurren o no en simultáneo (Que ocurre o se hace al mismo tiempo que otra cosa)."
+        "defi_distancia": "La distancia recorrida es el lugar en que se encuentra el móvil en un cierto instante de tiempo. Suele representarse con el vector de posición x. Trayectoria es la línea que describe un cuerpo durante su movimiento.",
+        "defi_tiempo": "El tiempo es una magnitud que sirve para medir la duración o la separación de uno o más acontecimientos. Permite ordenarlos en una secuencia (pasado, presente, futuro) y determinar si ocurren o no en simultáneo (que ocurre o se hace al mismo tiempo que otra cosa)."
     },
     {
-        "defi_grafico_velocidad": "Como se puede observar en el grafico, encontramos Velocidad en el eje 'Y', \ny Tiempo en el eje 'X'. Se puede observar una linea paralela al eje X ya que \nla velocidad se mantiene siempre constante.",
-        "defi_grafico_posicion": "Como se puede observar en el grafico, encontramos Posición en el eje 'Y', \ny Tiempo en el eje 'X'. Se puede observar una pendiente que crece \nen función del tiempo, ya que al ser un mru se mantiene constante la Velocidad."
+        "defi_grafico_velocidad": "Como se puede observar en el gráfico, encontramos Velocidad en el eje 'Y', \ny Tiempo en el eje 'X'. Se puede observar una línea paralela al eje X, ya que \nla velocidad se mantiene siempre constante.",
+        "defi_grafico_distancia": "Como se puede observar en el gráfico, encontramos Posición en el eje 'Y', \ny Tiempo en el eje 'X'. Se puede observar una pendiente que crece \nen función del tiempo, ya que al ser MRU se mantiene constante la Velocidad."
     },
     {
-        "importante":"Recordemos que en MRU, la posición final, distancia recorrida y desplazamiento es lo mismo debido a que el movimiento es en linea recta.",
-        "datos_posicion":"En MRU, la forma de conseguir la posición final es 'Xf = Xi + v * (Tf - Ti)', \n en donde Xf= 'Posición final', Xi= 'Posición inicial', v= 'Velocidad', \n Tf= 'Tiempo final' y Ti= 'Tiempo inicial'.",
-        "datos_velocidad":"En MRU, la forma de conseguir la velocidad constante es 'v = Δx / Δt', \n en donde v= 'Velocidad', Δx= 'Posición final - Posición inicial' \n y Δt= 'Tiempo final - Tiempo inicial'."
+        "importante": "Recordemos que en MRU, distancia recorrida y desplazamiento es lo mismo debido a que el movimiento es en línea recta.",
+        "datos_distancia": "En MRU, la forma de conseguir la posición final es 'Xf = Xi + v * (Tf - Ti)', \n en donde Xf = 'Posición final', Xi = 'Posición inicial', v = 'Velocidad', \n Tf = 'Tiempo final' y Ti = 'Tiempo inicial'.",
+        "datos_velocidad": "En MRU, la forma de conseguir la velocidad constante es 'v = Δx / Δt', \n en donde v = 'Velocidad', Δx = 'Posición final - Posición inicial' \n y Δt = 'Tiempo final - Tiempo inicial'."
     }
 ]

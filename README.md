@@ -35,7 +35,7 @@ Donde:
 \(x₀\) es la posición inicial.
 \(v\) es la velocidad.
 
-Ecuación de la posición: La posición de un objeto en un MRU se puede calcular utilizando la ecuación:
+Ecuación del desplazamiento: La distancia recorrida en MRU se puede calcular utilizando la ecuación:
 
 
 $$x = x₀ + v * t$$
